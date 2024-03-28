@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">ParkEase+</string>
+    <string name="skip">Skip</string>
+
+
+    <string name="default_web_client_id">199434456972-av7t54k0mc8fjs4ai21jk4kro0c0hph6.apps.googleusercontent.com</string>
 </resources>

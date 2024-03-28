@@ -2,4 +2,36 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+
+    <!--    Custom Colors-->
+    <color name="custom_color_primary">#643AE7</color>
+    <color name="custom_color_secondary">#FF8F00</color>
+    <color name="custom_color_secondary_light">#FFD299</color>
+    <color name="custom_color_background">#FFFFFF</color>
+    <color name="custom_color_text_primary">#060906</color>
+    <color name="custom_color_text_secondary">#464747</color>
+    <color name="lavender">#8692f7</color>
+    <color name="red">#ff0000</color>
+    <color name="pink">#ffb6c1</color>
+    <color name="sky">#00B3FF</color>
+    <color name="green">#008000</color>
+    <color name="yellow">#FFFF00</color>
+
+
+
+    <!-- Custom-->
+    <color name="primary">#0857F6</color>
+    <color name="secondary">#517FEE</color>
+
+    <color name="colorPrimary">#171C26</color>
+    <color name="colorPrimaryDark">#10141C</color>
+    <color name="colorAccent">#4e33ff</color>
+    <color name="ColorWhite">#ffffff</color>
+    <color name="ColorGray">#CACACA</color>
+    <color name="ColorLightBlack">#171C26</color>
+    <color name="ColorText">#606570</color>
+    <color name="ColorDarkBlack">#10141C</color>
+    <color name="ColorYellow">#ffd633</color>
+    <color name="ColorBlue">#4e33ff</color>
 </resources>

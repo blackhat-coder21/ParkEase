@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "199434456972",
+    "firebase_url": "https://parkease-a760f-default-rtdb.firebaseio.com",
     "project_id": "parkease-a760f",
     "storage_bucket": "parkease-a760f.appspot.com"
   },
@@ -12,7 +13,20 @@
           "package_name": "com.example.parkease"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "199434456972-apqq9k7n941jc58mvshfmejpugnefi0e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.parkease",
+            "certificate_hash": "344e1ccae32e4a04b79b80122b776adce066bff6"
+          }
+        },
+        {
+          "client_id": "199434456972-av7t54k0mc8fjs4ai21jk4kro0c0hph6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyAAPchVDYWCiq2Vn2_3lcimmUDXNHDQwxs"
@@ -20,7 +34,12 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "199434456972-av7t54k0mc8fjs4ai21jk4kro0c0hph6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }
