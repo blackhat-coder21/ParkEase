@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="onBoardingThreeVM" type="com.parkease.app.modules.onboardingthree.data.viewmodel.OnBoardingThreeVM"/>
+    </data>
+    <LinearLayout android:id="@+id/linearColumnview"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylegray_50">
+        <LinearLayout android:id="@+id/linearOnboarding"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <FrameLayout android:gravity="center_horizontal"
+                android:id="@+id/frameContent"
+                android:layout_height="@dimen/_456pxv"
+                android:layout_width="match_parent" style="@style/groupStyleblue_50">
+                <View
+                    android:background="@drawable/rectangle_bg_blue_a400_7a_radius_250"
+                    android:id="@+id/viewView"
+                    android:layout_gravity="center"
+                    android:layout_height="@dimen/_456pxh" android:layout_width="@dimen/_375pxh"/>
+                <FrameLayout android:id="@+id/frameStackviewOne"
+                    android:layout_gravity="top|center"
+                    android:layout_height="@dimen/_400pxv"
+                    android:layout_marginTop="@dimen/_6pxv" android:layout_width="match_parent">
+                    <View
+                        android:background="@drawable/rectangle_bg_blue_a400_7a_radius_200"
+                        android:id="@+id/viewViewOne"
+                        android:layout_gravity="center"
+                        android:layout_height="@dimen/_400pxh" android:layout_width="@dimen/_375pxh"/>
+                    <FrameLayout android:id="@+id/frameStackpaypalOne"
+                        android:layout_gravity="bottom|center"
+                        android:layout_height="@dimen/_299pxv"
+                        android:layout_marginBottom="@dimen/_36pxv" android:layout_width="match_parent">
+                        <ImageButton
+                            android:background="@drawable/rectangle_bg_blue_a400_radius_22"
+                            android:id="@+id/btnPaypalOne"
+                            android:layout_gravity="top|end"
+                            android:layout_height="@dimen/_45pxh"
+                            android:layout_marginEnd="@dimen/_115pxh"
+                            android:layout_width="@dimen/_45pxh"
+                            android:paddingHorizontal="@dimen/_8pxh"
+                            android:paddingVertical="@dimen/_8pxv"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/img_paypal" tools:ignore="ContentDescription"/>
+                        <View
+                            android:background="@drawable/rectangle_bg_blue_a400_7a_radius_133"
+                            android:id="@+id/viewViewTwo"
+                            android:layout_gravity="top|center"
+                            android:layout_height="@dimen/_267pxh"
+                            android:layout_marginTop="@dimen/_1pxv" android:layout_width="@dimen/_267pxh"/>
+                        <FrameLayout
+                            android:id="@+id/frameStackviewThree"
+                            android:layout_gravity="bottom|center"
+                            android:layout_height="@dimen/_284pxv" android:layout_width="match_parent">
+                            <View
+                                android:background="@drawable/rectangle_bg_blue_a400_7a_radius_74"
+                                android:id="@+id/viewViewThree"
+                                android:layout_gravity="top|center"
+                                android:layout_height="@dimen/_148pxh"
+                                android:layout_marginTop="@dimen/_46pxv" android:layout_width="@dimen/_148pxh"/>
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/recyclerOnBoarding"
+                                android:layout_gravity="center"
+                                android:layout_height="wrap_content"
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                app:layoutManager="androidx.recyclerview.widget.StaggeredGridLayoutManager"
+                                app:spanCount="1"
+                                itemSpace="@{@dimen/_12pxh}"
+                                tools:itemCount="6" tools:listitem="@layout/row_boarding"/>
+                            <ImageButton
+                                android:background="@drawable/rectangle_bg_blue_a400_radius_28"
+                                android:id="@+id/btnSettingsOne"
+                                android:layout_gravity="bottom|end"
+                                android:layout_height="@dimen/_57pxh"
+                                android:layout_marginBottom="@dimen/_12pxv"
+                                android:layout_marginEnd="@dimen/_67pxh"
+                                android:layout_width="@dimen/_57pxh"
+                                android:paddingHorizontal="@dimen/_12pxh"
+                                android:paddingVertical="@dimen/_12pxv"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/img_settings" tools:ignore="ContentDescription"/>
+                            <ImageButton
+                                android:background="@drawable/rectangle_bg_blue_a400_radius_24"
+                                android:id="@+id/btnUserOne"
+                                android:layout_gravity="bottom|start"
+                                android:layout_height="@dimen/_49pxh"
+                                android:layout_marginBottom="@dimen/_93pxv"
+                                android:layout_marginStart="@dimen/_71pxh"
+                                android:layout_width="@dimen/_49pxh"
+                                android:paddingHorizontal="@dimen/_12pxh"
+                                android:paddingVertical="@dimen/_12pxv"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/img_user" tools:ignore="ContentDescription"/>
+                        </FrameLayout>
+                    </FrameLayout>
+                </FrameLayout>
+            </FrameLayout>
+            <TextView android:ellipsize="end"
+                android:gravity="center_horizontal"
+                android:id="@+id/txtManypayment"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_35pxv"
+                android:layout_width="match_parent"
+                android:lineSpacingExtra="@dimen/_6pxh"
+                android:singleLine="true"
+                android:text="@{onBoardingThreeVM.onBoardingThreeModel.txtManypayment}"
+                style="@style/txtPlusJakartaSansromanbold20" tools:text="@string/msg_many_payment_method"/>
+            <TextView android:gravity="center_horizontal"
+                android:id="@+id/txtWeprovide"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_5pxv"
+                android:layout_marginEnd="@dimen/_36pxh"
+                android:layout_marginStart="@dimen/_35pxh"
+                android:layout_marginTop="@dimen/_13pxv"
+                android:layout_width="match_parent"
+                android:lineSpacingExtra="@dimen/_8pxh"
+                android:text="@{onBoardingThreeVM.onBoardingThreeModel.txtWeprovide}"
+                style="@style/txtPlusJakartaSansromanregular12" tools:text="@string/msg_we_provide_various"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical"
+            android:id="@+id/linearButton"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_40pxv"
+            android:layout_marginEnd="@dimen/_24pxh"
+            android:layout_marginStart="@dimen/_24pxh"
+            android:layout_width="match_parent" android:orientation="horizontal">
+            <androidx.appcompat.widget.AppCompatButton
+                android:ellipsize="end" android:gravity="center"
+                android:id="@+id/btnGetStarted"
+                android:layout_gravity="center_vertical"
+                android:layout_height="@dimen/_52pxv"
+                android:layout_width="@dimen/_155pxh"
+                android:paddingBottom="@dimen/_17pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingStart="@dimen/_30pxh"
+                android:paddingTop="@dimen/_17pxv"
+                android:singleLine="true"
+                android:text="@string/lbl_get_started"
+                android:textAllCaps="false"
+                style="@style/btnSolidRounded" tools:text="@string/lbl_get_started"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:ellipsize="end" android:gravity="center"
+                android:id="@+id/btnLogin"
+                android:layout_gravity="center_vertical"
+                android:layout_height="@dimen/_52pxv"
+                android:layout_marginStart="@dimen/_16pxh"
+                android:layout_width="@dimen/_156pxh"
+                android:paddingBottom="@dimen/_17pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingStart="@dimen/_30pxh"
+                android:paddingTop="@dimen/_17pxv"
+                android:singleLine="true"
+                android:text="@string/lbl_login"
+                android:textAllCaps="false"
+                style="@style/btnRoundedOutline" tools:text="@string/lbl_login"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

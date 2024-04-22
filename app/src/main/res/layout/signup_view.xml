@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="signUpVM" type="com.park.app.modules.signup.data.viewmodel.SignUpVM"/>
+    </data>
+    <LinearLayout android:id="@+id/linearColumnsignUp"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylegray_50">
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearSignup"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:paddingEnd="@dimen/_24pxh"
+            android:paddingStart="@dimen/_24pxh" android:paddingTop="@dimen/_66pxv">
+            <LinearLayout android:id="@+id/linearRowsignup"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtSignup"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:lineSpacingExtra="@dimen/_5pxh"
+                    android:singleLine="true"
+                    android:text="@{signUpVM.signUpModel.txtSignup}"
+                    style="@style/txtPlusJakartaSansromanbold18" tools:text="@string/lbl_sign_up"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtCancel"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_5pxv"
+                    android:layout_marginStart="@dimen/_218pxh"
+                    android:layout_width="wrap_content"
+                    android:lineSpacingExtra="@dimen/_4pxh"
+                    android:singleLine="true"
+                    android:text="@{signUpVM.signUpModel.txtCancel}"
+                    style="@style/txtPlusJakartaSansromanregular12" tools:text="@string/lbl_cancel"/>
+            </LinearLayout>
+            <TextView android:id="@+id/txtByclickthe"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_24pxh"
+                android:layout_marginTop="@dimen/_17pxv"
+                android:layout_width="match_parent"
+                android:lineSpacingExtra="@dimen/_8pxh"
+                android:text="@{signUpVM.signUpModel.txtByclickthe}"
+                style="@style/txtPlusJakartaSansromanregular12_1" tools:text="By click the sign up button, you’re agree to Parken’s Terms and Service and acknlowledge the Privacy and Policy"/>
+
+            <LinearLayout
+                android:id="@+id/linearColumnlabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_39pxv"
+                android:gravity="start"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtLabel"
+                    style="@style/txtPlusJakartaSansromanregular10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:lineSpacingExtra="@dimen/_3pxh"
+                    android:singleLine="true"
+                    android:text="@{signUpVM.signUpModel.txtLabel}"
+                    tools:text="@string/lbl_email" />
+
+                <EditText
+                    android:id="@+id/etEmail"
+                    style="@style/etPlusJakartaSansromanbold14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_14pxv"
+                    android:ellipsize="end"
+                    android:hint="@string/msg_kingkai_gmail_com"
+                    android:inputType="text"
+                    android:lineSpacingExtra="@dimen/_4pxh"
+                    android:singleLine="true"
+                    android:text="@={signUpVM.signUpModel.etEmailValue}"
+                    android:textColorHint="@color/blue_gray_900"
+                    tools:ignore="Autofill" />
+            </LinearLayout>
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearColumnlabelOne"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20pxv"
+                android:layout_width="match_parent" android:orientation="vertical">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtLabelOne"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:lineSpacingExtra="@dimen/_3pxh"
+                    android:singleLine="true"
+                    android:text="@{signUpVM.signUpModel.txtLabelOne}"
+                    style="@style/txtPlusJakartaSansromanregular10" tools:text="@string/lbl_name"/>
+                <EditText android:ellipsize="end"
+                    android:hint="@string/lbl_kai_havertz"
+                    android:id="@+id/etName" android:inputType="text"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_13pxv"
+                    android:layout_width="match_parent"
+                    android:lineSpacingExtra="@dimen/_4pxh"
+                    android:singleLine="true"
+                    android:text="@={signUpVM.signUpModel.etNameValue}"
+                    android:textColorHint="@color/blue_gray_900"
+                    style="@style/etPlusJakartaSansromanbold14" tools:ignore="Autofill"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearColumnlabelTwo"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20pxv"
+                android:layout_width="wrap_content" android:orientation="vertical">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtLabelTwo"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:lineSpacingExtra="@dimen/_3pxh"
+                    android:singleLine="true"
+                    android:text="@{signUpVM.signUpModel.txtLabelTwo}"
+                    style="@style/txtPlusJakartaSansromanregular10" tools:text="@string/lbl_email"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtSome"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_13pxv"
+                    android:layout_width="wrap_content"
+                    android:lineSpacingExtra="@dimen/_4pxh"
+                    android:singleLine="true"
+                    android:text="@{signUpVM.signUpModel.txtSome}"
+                    style="@style/txtPlusJakartaSansromanregular14" tools:text="@string/lbl_march_16_1999"/>
+                <View android:background="@color/gray_300"
+                    android:id="@+id/lineVectortenThree"
+                    android:layout_height="@dimen/_1pxv"
+                    android:layout_marginTop="@dimen/_9pxv" android:layout_width="@dimen/_327pxh"/>
+                <View android:background="@color/gray_300"
+                    android:id="@+id/lineVectortenThree"
+                    android:layout_height="@dimen/_1pxv" android:layout_width="@dimen/_327pxh"/>
+            </LinearLayout>
+            <EditText android:drawableEnd="@drawable/img_eye"
+                android:drawablePadding="@dimen/_30pxh"
+                android:ellipsize="end"
+                android:hint="@string/lbl_password"
+                android:id="@+id/etPassword" android:inputType="text"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_46pxv"
+                android:layout_width="match_parent"
+                android:lineSpacingExtra="@dimen/_4pxh"
+                android:singleLine="true"
+                android:text="@={signUpVM.signUpModel.etPasswordValue}"
+                android:textColorHint="@color/blue_gray_500"
+                style="@style/etPlusJakartaSansromanregular14" tools:ignore="Autofill"/>
+            <EditText android:drawableEnd="@drawable/img_eye"
+                android:drawablePadding="@dimen/_30pxh"
+                android:ellipsize="end"
+                android:hint="@string/msg_confirm_password"
+                android:id="@+id/etConfirmpassword"
+                android:inputType="text"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_5pxv"
+                android:layout_marginTop="@dimen/_46pxv"
+                android:layout_width="match_parent"
+                android:lineSpacingExtra="@dimen/_4pxh"
+                android:singleLine="true"
+                android:text="@={signUpVM.signUpModel.etConfirmpasswordValue}"
+                android:textColorHint="@color/blue_gray_500"
+                style="@style/etPlusJakartaSansromanregular14" tools:ignore="Autofill"/>
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/btnSignUp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_40pxv"
+            android:layout_marginEnd="@dimen/_24pxh"
+            android:layout_marginStart="@dimen/_24pxh"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:text="@string/lbl_sign_up"
+            android:textAllCaps="false" style="@style/btnSolidRounded" tools:text="@string/lbl_sign_up"/>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="boardingRowModel" type="com.parkease.app.modules.onboardingthree.data.model.BoardingRowModel"/>
+    </data>
+    <ImageView android:id="@+id/imageRectangle"
+        android:layout_height="@dimen/_150pxv"
+        android:layout_width="match_parent" android:scaleType="fitXY"
+        cornerRadius="@{@dimen/_12pxh}"
+        imageRes="@{@drawable/img_rectangle_99}"
+        tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle_99"/>
+</layout>
