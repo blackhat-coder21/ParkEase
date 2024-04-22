@@ -15,7 +15,7 @@
             android:id="@+id/topLinearLayout"
             android:layout_width="match_parent"
             android:layout_height="240dp"
-            android:background="@drawable/top_background"
+            android:background="@drawable/top_background_image"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
