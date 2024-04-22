@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="otpVerificationVM" type="com.parkease.app.modules.otpverification.data.viewmodel.OtpVerificationVM"/>
+    </data>
+    <LinearLayout android:id="@+id/linearOTPVerification"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylegray_50">
+        <androidx.appcompat.widget.Toolbar
+            android:gravity="center_horizontal"
+            android:id="@+id/toolbarToolbar"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4pxv"
+            android:layout_width="match_parent" app:contentInsetStart="0dp">
+            <LinearLayout android:gravity="center_vertical"
+                android:id="@+id/linearRowotp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_16pxv"
+                android:layout_marginEnd="@dimen/_24pxh"
+                android:layout_marginStart="@dimen/_24pxh"
+                android:layout_marginTop="@dimen/_16pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtOtp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:lineSpacingExtra="@dimen/_5pxh"
+                    android:singleLine="true"
+                    android:text="@{otpVerificationVM.otpVerificationModel.txtOtp}"
+                    style="@style/txtPlusJakartaSansromanbold18" tools:text="@string/msg_otp_verification"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtCancel"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_3pxv"
+                    android:layout_marginStart="@dimen/_145pxh"
+                    android:layout_marginTop="@dimen/_3pxv"
+                    android:layout_width="wrap_content"
+                    android:lineSpacingExtra="@dimen/_4pxh"
+                    android:singleLine="true"
+                    android:text="@{otpVerificationVM.otpVerificationModel.txtCancel}"
+                    style="@style/txtPlusJakartaSansromanregular12_1" tools:text="@string/lbl_cancel"/>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <LinearLayout android:id="@+id/linearColumnwevejusts"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/_2pxv"
+            android:paddingEnd="@dimen/_24pxh"
+            android:paddingStart="@dimen/_24pxh" android:paddingTop="@dimen/_2pxv">
+            <TextView android:gravity="start"
+                android:id="@+id/txtWevejustsend"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_65pxh"
+                android:layout_width="match_parent"
+                android:lineSpacingExtra="@dimen/_8pxh"
+                android:text="@{otpVerificationVM.otpVerificationModel.txtWevejustsend}"
+                style="@style/txtPlusJakartaSansromanregular12" tools:text="@string/msg_we_ve_just_send"/>
+            <com.mukesh.OtpView android:focusableInTouchMode="true"
+                android:id="@+id/otpViewOtpview"
+                android:inputType="number"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_37pxv"
+                android:layout_width="wrap_content"
+                android:textColor="@color/blue_gray_900"
+                android:textSize="@dimen/_20pxh" app:OtpItemCount="4"
+                app:OtpItemSpacing="@dimen/_7pxh"
+                app:OtpItemWidth="@dimen/_76pxh"
+                app:OtpLineColor="@color/gray_300" app:OtpViewType="line"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:ellipsize="end" android:gravity="center"
+                android:id="@+id/btnContinue"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_52pxv"
+                android:layout_marginTop="@dimen/_39pxv"
+                android:layout_width="@dimen/_327pxh"
+                android:singleLine="true"
+                android:text="@string/lbl_continue"
+                android:textAllCaps="false"
+                style="@style/btnSolidRounded" tools:text="@string/lbl_continue"/>
+            <TextView android:ellipsize="end"
+                android:gravity="center_horizontal"
+                android:id="@+id/txtTertiarybutton"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_5pxv"
+                android:layout_marginTop="@dimen/_22pxv"
+                android:layout_width="match_parent"
+                android:lineSpacingExtra="@dimen/_4pxh"
+                android:singleLine="true"
+                android:text="@{otpVerificationVM.otpVerificationModel.txtTertiarybutton}"
+                style="@style/txtPlusJakartaSansromanbold12" tools:text="@string/msg_didn_t_received"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

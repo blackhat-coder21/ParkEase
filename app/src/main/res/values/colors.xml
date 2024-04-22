@@ -24,9 +24,9 @@
     <color name="primary">#0857F6</color>
     <color name="secondary">#517FEE</color>
 
-    <color name="colorPrimary">#171C26</color>
-    <color name="colorPrimaryDark">#10141C</color>
-    <color name="colorAccent">#4e33ff</color>
+<!--    <color name="colorPrimary">#171C26</color>-->
+<!--    <color name="colorPrimaryDark">#10141C</color>-->
+<!--    <color name="colorAccent">#4e33ff</color>-->
     <color name="ColorWhite">#ffffff</color>
     <color name="ColorGray">#CACACA</color>
     <color name="ColorLightBlack">#171C26</color>
@@ -34,4 +34,61 @@
     <color name="ColorDarkBlack">#10141C</color>
     <color name="ColorYellow">#ffd633</color>
     <color name="ColorBlue">#4e33ff</color>
+
+
+    <!--new colors-->
+
+    <!-- Primary Colors -->
+    <color name="colorPrimary">#2378EF</color>
+    <color name="colorPrimaryDark">#1D202B</color>
+    <color name="colorAccent">#FECC32</color>
+
+    <!-- Custom Colors -->
+    <color name="colorSuccess">#1CBE8E</color>
+    <color name="colorError">#E53935</color>
+    <color name="colorWarning">#FECC32</color>
+
+    <!-- Additional Colors -->
+    <color name="colorAdditional1">#FFFFFF</color>
+    <color name="colorAdditional2">#D9D9D9</color>
+    <color name="colorAdditional3">#F9FBFC</color>
+    <color name="colorAdditional4">#F6F6F6</color>
+    <color name="colorAdditional5">#ACAEBE</color>
+    <color name="colorAdditional6">#75788D</color>
+    <color name="colorAdditional7">#222741</color>
+    <color name="colorAdditional8">#0F1225</color>
+
+    <!-- Text Colors -->
+    <color name="colorTextLight1">#FFFFFF</color>
+    <color name="colorTextLight2">#D9D9D9</color>
+    <color name="colorTextLight3">#F9FBFC</color>
+    <color name="colorTextDark">#222741</color>
+    <color name="colorTextGray">#ACAEBE</color>
+
+
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="blue_gray_200">#acaebe</color>
+    <color name="gray_400">#b0b0b3</color>
+    <color name="blue_A400">#2277ef</color>
+    <color name="red_600">#e53935</color>
+    <color name="gray_900">#0f1225</color>
+    <color name="gray_900_01">#1d202b</color>
+    <color name="blue_gray_500">#75788d</color>
+    <color name="red_500">#eb4335</color>
+    <color name="gray_300">#e5e5e5</color>
+    <color name="gray_50">#f9fbfc</color>
+    <color name="blue_50">#d9e8fa</color>
+    <color name="gray_900_4c">#4c1d202b</color>
+    <color name="white_A700_01">#ffffff</color>
+    <color name="blue_A400_7a">#7a2277ef</color>
+    <color name="blue_gray_900_01">#283544</color>
+    <color name="blue_gray_900">#222741</color>
+    <color name="white_A700">#fefefe</color>
+    <color name="ic_launcher_background">#FFFFFF</color>
+
+
 </resources>

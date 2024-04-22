@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="addVehicleVM" type="com.park.app.modules.addvehicle.data.viewmodel.AddVehicleVM"/>
+    </data>
+    <LinearLayout android:id="@+id/linearColumnviewOne"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylegray_50">
+        <LinearLayout android:id="@+id/linearAddvehicle"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/_27pxv"
+            android:paddingEnd="@dimen/_24pxh"
+            android:paddingStart="@dimen/_24pxh" android:paddingTop="@dimen/_27pxv">
+            <ImageView android:gravity="center_vertical"
+                android:id="@+id/linearRowview"
+                android:layout_height="200dp"
+                android:src="@drawable/add_vehicle"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="200dp" >
+            </ImageView>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtAddvehicle"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_59pxv"
+                android:layout_width="wrap_content"
+                android:lineSpacingExtra="@dimen/_5pxh"
+                android:singleLine="true"
+                android:text="@{addVehicleVM.addVehicleModel.txtAddvehicle}"
+                style="@style/txtPlusJakartaSansromanbold16" tools:text="@string/lbl_add_vehicle"/>
+            <TextView android:gravity="center_horizontal"
+                android:id="@+id/txtLoremipsum"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_14pxh"
+                android:layout_marginStart="@dimen/_14pxh"
+                android:layout_marginTop="@dimen/_15pxv"
+                android:layout_width="match_parent"
+                android:lineSpacingExtra="@dimen/_8pxh"
+                android:text="@{addVehicleVM.addVehicleModel.txtLoremipsum}"
+                style="@style/txtPlusJakartaSansromanregular12_1" tools:text="@string/msg_lorem_ipsum_dolor2"/>
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearColumnlabel"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_28pxv"
+                android:layout_width="wrap_content" android:orientation="vertical">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtLabel"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:lineSpacingExtra="@dimen/_3pxh"
+                    android:singleLine="true"
+                    android:text="@{addVehicleVM.addVehicleModel.txtLabel}"
+                    style="@style/txtPlusJakartaSansromanregular10" tools:text="@string/lbl_vehicle_type"/>
+                <EditText android:ellipsize="end"
+                    android:hint="@string/lbl_car"
+                    android:id="@+id/etSomething"
+                    android:inputType="text"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_11pxv"
+                    android:layout_width="match_parent"
+                    android:lineSpacingExtra="@dimen/_4pxh"
+                    android:singleLine="true"
+                    android:text="@={addVehicleVM.addVehicleModel.etSomethingValue}"
+                    android:textColorHint="@color/blue_gray_900"
+                    style="@style/etPlusJakartaSansromanbold14" tools:ignore="Autofill"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearColumnlabelOne"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20pxv"
+                android:layout_width="wrap_content" android:orientation="vertical">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtLabelOne"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:lineSpacingExtra="@dimen/_3pxh"
+                    android:singleLine="true"
+                    android:text="@{addVehicleVM.addVehicleModel.txtLabelOne}"
+                    style="@style/txtPlusJakartaSansromanregular10" tools:text="@string/msg_lisence_plat_number"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtBCounter"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_13pxv"
+                    android:layout_width="wrap_content"
+                    android:lineSpacingExtra="@dimen/_4pxh"
+                    android:singleLine="true"
+                    android:text="@{addVehicleVM.addVehicleModel.txtBCounter}"
+                    style="@style/txtPlusJakartaSansromanregular14" tools:text="@string/lbl_b_3647"/>
+                <View android:background="@color/gray_300"
+                    android:id="@+id/lineVectortenThree"
+                    android:layout_height="@dimen/_1pxv"
+                    android:layout_marginTop="@dimen/_10pxv" android:layout_width="@dimen/_327pxh"/>
+                <View android:background="@color/gray_300"
+                    android:id="@+id/lineVectortenThree"
+                    android:layout_height="@dimen/_1pxv" android:layout_width="@dimen/_327pxh"/>
+            </LinearLayout>
+            <EditText android:ellipsize="end"
+                android:hint="@string/lbl_car_model"
+                android:id="@+id/etLabelTwo" android:inputType="text"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_46pxv"
+                android:layout_width="match_parent"
+                android:lineSpacingExtra="@dimen/_4pxh"
+                android:singleLine="true"
+                android:text="@={addVehicleVM.addVehicleModel.etLabelTwoValue}"
+                android:textColorHint="@color/blue_gray_500"
+                style="@style/etPlusJakartaSansromanregular14" tools:ignore="Autofill"/>
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/btnAddVehicle"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_40pxv"
+            android:layout_marginEnd="@dimen/_24pxh"
+            android:layout_marginStart="@dimen/_24pxh"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_17pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_17pxv" android:singleLine="true"
+            android:text="@string/lbl_add_vehicle"
+            android:textAllCaps="false" style="@style/btnSolidRounded" tools:text="@string/lbl_add_vehicle"/>
+    </LinearLayout>
+</layout>

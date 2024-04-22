@@ -4,4 +4,36 @@
 
 
     <string name="default_web_client_id">199434456972-av7t54k0mc8fjs4ai21jk4kro0c0hph6.apps.googleusercontent.com</string>
+    <string name="parkease">ParkEase+</string>
+
+    <string name="loading">Loading…</string>
+    <string name="no_internet_connection">No internet connection!</string>
+    <string name="msg_many_payment_method">Many payment method option</string>
+    <string name="lbl_continue">Continue</string>
+    <string name="lbl_email">Email</string>
+    <string name="msg_incorrect_password">Incorrect password. Please reenter your password and try again. If the problem persists, try resetting your password by click \u2018Forget Password?\u2019</string>
+    <string name="msg_we_provide_various">We provide various payment options, we hope this will make it easier for you to make payments.</string>
+    <string name="msg_we_ve_just_send2">We\u2019ve just send you 4 digits code to your email </string>
+    <string name="msg_input_your_linked">Input your linked email to your ParkEase account below, we\u2019ll send you a link to change your password</string>
+    <string name="msg_don_t_have_account">Don\u2019t have account? Sign Up</string>
+    <string name="msg_kingkai_gmail_com">kingkai@gmail.com</string>
+    <string name="lbl_login">Login</string>
+    <string name="msg_example_example_com">example@example.com</string>
+    <string name="msg_continue_with_google">Continue with Google</string>
+    <string name="msg_didn_t_received2">Didn\u2019t received the code?</string>
+    <string name="lbl_forgot_password">Forgot Password</string>
+    <string name="lbl_resend_code">Resend Code</string>
+    <string name="msg_we_ve_just_send">We\u2019ve just send you 4 digits code to your email example@example.com</string>
+    <string name="lbl_get_started">Get Started</string>
+    <string name="lbl_sign_up">Sign Up</string>
+    <string name="msg_otp_verification">OTP Verification</string>
+    <string name="msg_didn_t_received">Didn\u2019t received the code? Resend Code</string>
+    <string name="lbl_password">Password</string>
+    <string name="lbl_or">or</string>
+    <string name="msg_forgot_password">Forgot Password?</string>
+    <string name="msg_continue_with_apple">Continue with Apple</string>
+    <string name="msg_continue_with_facebook">Continue with Facebook</string>
+    <string name="lbl_parken">ParkEase</string>
+    <string name="msg_don_t_have_account2">Don\u2019t have account?</string>
+    <string name="lbl_cancel">Cancel</string>
 </resources>

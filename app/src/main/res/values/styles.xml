@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="txtMulishromanbold14">
+        <item name="android:textSize">@dimen/_14pxh</item>
+        <item name="android:textColor">@color/blue_gray_200</item>
+        <item name="android:fontFamily">@font/mulish</item>
+        <item name="android:textFontWeight" tools:targetApi="p">700</item>
+    </style>
+    <style name="btnSolidRounded">
+        <item name="android:textSize">@dimen/_14pxh</item>
+        <item name="android:textColor">@color/white_A700_01</item>
+        <item name="android:fontFamily">@font/plus_jakarta_sans</item>
+        <item name="android:textFontWeight" tools:targetApi="p">700</item>
+        <item name="android:background">@drawable/rectangle_bg_blue_a400_radius_10</item>
+    </style>
+    <style name="txtMulishromanbold12">
+        <item name="android:textSize">@dimen/_12pxh</item>
+        <item name="android:textColor">@color/blue_gray_900</item>
+        <item name="android:fontFamily">@font/mulish</item>
+        <item name="android:textFontWeight" tools:targetApi="p">700</item>
+    </style>
+    <style name="btnRoundedOutline_1">
+        <item name="android:textSize">@dimen/_16pxh</item>
+        <item name="android:textColor">@color/gray_900_01</item>
+        <item name="android:fontFamily">@font/plus_jakarta_sans</item>
+        <item name="android:textFontWeight" tools:targetApi="p">500</item>
+        <item name="android:background">@drawable/rectangle_border_gray_900_01_radius_10</item>
+    </style>
+    <style name="txtMulishromansemibold12">
+        <item name="android:textSize">@dimen/_12pxh</item>
+        <item name="android:textColor">@color/gray_400</item>
+        <item name="android:fontFamily">@font/mulish</item>
+        <item name="android:textFontWeight" tools:targetApi="p">600</item>
+    </style>
+    <style name="txtPlusJakartaSansromanregular10_1">
+        <item name="android:textSize">@dimen/_10pxh</item>
+        <item name="android:textColor">@color/red_600</item>
+        <item name="android:fontFamily">@font/plus_jakarta_sans</item>
+        <item name="android:textFontWeight" tools:targetApi="p">400</item>
+    </style>
+    <style name="txtPlusJakartaSansromanregular14_1">
+        <item name="android:textSize">@dimen/_14pxh</item>
+        <item name="android:textColor">@color/blue_gray_500</item>
+        <item name="android:fontFamily">@font/plus_jakarta_sans</item>
+        <item name="android:textFontWeight" tools:targetApi="p">400</item>
+    </style>
+    <style name="txtPlusJakartaSansromanregular12_1">
+        <item name="android:textSize">@dimen/_12pxh</item>
+        <item name="android:textColor">@color/red_600</item>
+        <item name="android:fontFamily">@font/plus_jakarta_sans</item>
+        <item name="android:textFontWeight" tools:targetApi="p">400</item>
+    </style>
+    <style name="txtPlusJakartaSansromanbold14">
+        <item name="android:textSize">@dimen/_14pxh</item>
+        <item name="android:textColor">@color/blue_gray_900</item>
+        <item name="android:fontFamily">@font/plus_jakarta_sans</item>
+        <item name="android:textFontWeight" tools:targetApi="p">700</item>
+    </style>
+    <style name="txtPlusJakartaSansromanbold24">
+        <item name="android:textSize">@dimen/_24pxh</item>
+        <item name="android:textColor">@color/blue_A400</item>
+        <item name="android:fontFamily">@font/plus_jakarta_sans</item>
+        <item name="android:textFontWeight" tools:targetApi="p">700</item>
+    </style>
+    <style name="txtPlusJakartaSansromanregular14">
+        <item name="android:textSize">@dimen/_14pxh</item>
+        <item name="android:textColor">@color/blue_A400</item>
+        <item name="android:fontFamily">@font/plus_jakarta_sans</item>
+        <item name="android:textFontWeight" tools:targetApi="p">400</item>
+    </style>
+    <style name="txtPlusJakartaSansromanbold12">
+        <item name="android:textSize">@dimen/_12pxh</item>
+        <item name="android:textColor">@color/blue_A400</item>
+        <item name="android:fontFamily">@font/plus_jakarta_sans</item>
+        <item name="android:textFontWeight" tools:targetApi="p">700</item>
+    </style>
+    <style name="txtPlusJakartaSansromanregular12">
+        <item name="android:textSize">@dimen/_12pxh</item>
+        <item name="android:textColor">@color/blue_gray_500</item>
+        <item name="android:fontFamily">@font/plus_jakarta_sans</item>
+        <item name="android:textFontWeight" tools:targetApi="p">400</item>
+    </style>
+    <style name="btnRoundedOutline">
+        <item name="android:textSize">@dimen/_14pxh</item>
+        <item name="android:textColor">@color/blue_A400</item>
+        <item name="android:fontFamily">@font/plus_jakarta_sans</item>
+        <item name="android:textFontWeight" tools:targetApi="p">700</item>
+        <item name="android:background">@drawable/rectangle_border_blue_a400_radius_10</item>
+    </style>
+    <style name="etPlusJakartaSansromanregular14">
+        <item name="android:textSize">@dimen/_14pxh</item>
+        <item name="android:textColor">@color/blue_gray_500</item>
+        <item name="android:fontFamily">@font/plus_jakarta_sans</item>
+        <item name="android:textFontWeight" tools:targetApi="p">400</item>
+    </style>
+    <style name="txtPlusJakartaSansromanbold18">
+        <item name="android:textSize">@dimen/_18pxh</item>
+        <item name="android:textColor">@color/blue_gray_900</item>
+        <item name="android:fontFamily">@font/plus_jakarta_sans</item>
+        <item name="android:textFontWeight" tools:targetApi="p">700</item>
+    </style>
+    <style name="txtPlusJakartaSansromanregular10">
+        <item name="android:textSize">@dimen/_10pxh</item>
+        <item name="android:textColor">@color/blue_gray_500</item>
+        <item name="android:fontFamily">@font/plus_jakarta_sans</item>
+        <item name="android:textFontWeight" tools:targetApi="p">400</item>
+    </style>
+    <style name="etMulishromanbold12">
+        <item name="android:textSize">@dimen/_12pxh</item>
+        <item name="android:textColor">@color/blue_gray_900</item>
+        <item name="android:fontFamily">@font/mulish</item>
+        <item name="android:textFontWeight" tools:targetApi="p">700</item>
+    </style>
+    <style name="groupStylegray_50">
+        <item name="android:background">@drawable/rectangle_bg_gray_50</item>
+    </style>
+    <style name="groupStyleblue_50">
+        <item name="android:background">@drawable/rectangle_bg_blue_50</item>
+    </style>
+    <style name="txtPlusJakartaSansromanbold20">
+        <item name="android:textSize">@dimen/_20pxh</item>
+        <item name="android:textColor">@color/blue_gray_900</item>
+        <item name="android:fontFamily">@font/plus_jakarta_sans</item>
+        <item name="android:textFontWeight" tools:targetApi="p">700</item>
+    </style>
+</resources>
